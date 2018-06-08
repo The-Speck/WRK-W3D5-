@@ -1,6 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #FEFFF1;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 h1 {
@@ -18,8 +20,14 @@ ul li a, figcaption a {
 }
 
 header > img {
-  width: 100px;
-  float: left;
+  width: auto;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .ingredients-list {
@@ -37,7 +45,7 @@ ol {
 }
 
 input[type="radio"] {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     width: 27px;
     height: 27px;
     background-image: url(../assets/stars.png);
@@ -67,11 +75,15 @@ h2 + .user_review {
 }
 
 nav {
-    float: right;
+    /* float: right; */
 }
 
 nav ul li {
-    display: inline-block;
+    /* display: inline-block; */
+}
+
+nav ul {
+  display: flex;
 }
 
 nav ul li a {
@@ -81,11 +93,14 @@ nav ul li a {
 
 body {
   margin: 0 auto;
-    width: 60%;
+    width: 70%;
 }
 
 aside {
-    display: inline-block;
+  display: inline-block;
+  background-color: bisque;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .ingredients-list li {
@@ -108,5 +123,9 @@ textarea {
 
 label {
     display: block;
+}
+
+html {
+  background-color: beige;
 }
 
