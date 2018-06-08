@@ -12,8 +12,8 @@ module Associatable
   # end
   
   def has_one_through(name, through_name, source_name)
-    p through = assoc_options[through_name]
-    p source = through
+    through = assoc_options[through_name]
+    source = through
       .model_class
       .assoc_options[source_name]
       
